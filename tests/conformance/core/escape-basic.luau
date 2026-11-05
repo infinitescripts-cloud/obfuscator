@@ -1,0 +1,7 @@
+print("a\tb\nc")
+print("quote: \"x\"")
+print("backslash: \\")
+print("hex: \x41\x42")
+print("dec: \65\66")
+print(#"\0\1\2")
+print(string.byte("ABC", 1, 3))
