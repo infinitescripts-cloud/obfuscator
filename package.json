@@ -1,0 +1,21 @@
+{
+  "name": "luaufuscator",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build:all": "npm run build --workspaces --if-present",
+    "build:web": "npm run build -w packages/web",
+    "test": "vitest run --passWithNoTests",
+    "gen:corpus": "tsx scripts/gen-corpus.ts",
+    "check:corpus": "tsx scripts/check-corpus.ts",
+    "check:purity": "tsx scripts/check-purity.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": { "node": ">=20" }
+}
