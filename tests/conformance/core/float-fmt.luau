@@ -1,0 +1,7 @@
+print(1/3)
+print(0.1 + 0.2)
+print(1e100)
+print(1e-100)
+print(-0.0)
+print(math.huge)
+print(-math.huge)
